@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SME – Port d’Agadir – Marsa Maroc</title>
+<style>
+:root{--bg:#f4f7fb;--cd:#fff;--bd:#e3e9f2;--tx:#0f1b33;--mu:#64748b;--ac:#0d9488;--sb:#0a2a33;--ok:#059669;--wa:#b45309;--wab:#fffbeb;--wae:#fde68a;--er:#be123c;--erb:#fff1f2;--ere:#fecdd3;--inf:#ecfdf5}
+[data-t=d]{--bg:#0a1220;--cd:#111c30;--bd:#1f2d47;--tx:#e6edf7;--mu:#8a9ab3;--wab:#2a2110;--wae:#5c4710;--erb:#2b1119;--ere:#6b1d2f;--inf:#0f1f3a;--wa:#fbbf24;--er:#fb7185}
+*{box-sizing:border-box;margin:0;font-family:Inter,system-ui,'Segoe UI',Arial,sans-serif}
+body{background:var(--bg);color:var(--tx);display:flex;flex-direction:column;min-height:100vh}
+aside{display:flex;flex-wrap:wrap;align-items:center;gap:2px;padding:6px 22px;background:var(--sb);color:#cbd5e1;position:sticky;top:0;z-index:6}
+.br{display:flex;gap:12px;align-items:center;padding:4px 22px 4px 0;margin-right:10px;border-right:1px solid #1e4450}
+.lg{width:40px;height:40px;border-radius:10px;background:var(--ac);display:grid;place-items:center;color:#fff;font-size:20px}
+.br b{color:#fff;display:block;letter-spacing:.04em}.br small{color:#38bdf8;font-weight:600;font-size:.72rem}
+.gr{display:none}
+aside a{display:flex;align-items:center;gap:7px;padding:8px 11px;border-radius:20px;cursor:pointer;font-size:.84rem;font-weight:500;white-space:nowrap}
+aside a:hover{background:#12414d}aside a.on{background:var(--ac);color:#fff}
+aside a i{font-style:normal;width:18px;text-align:center}.bd{margin-left:auto;background:#ef4444;color:#fff;border-radius:10px;font-size:.7rem;padding:1px 7px;font-weight:700}
+.mn{flex:1;min-width:0}
+header{display:flex;align-items:center;gap:14px;padding:12px 26px;background:var(--cd);border-bottom:1px solid var(--bd);flex-wrap:wrap}
+.bc{font-size:.8rem;color:var(--mu)}.bc b{color:var(--ac);font-weight:500}header h1{font-size:1.2rem}
+.sp{margin-left:auto;display:flex;gap:10px;align-items:center}
+#q{padding:9px 14px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);width:230px}
+.ib{border:1px solid var(--bd);background:none;border-radius:10px;padding:8px 11px;cursor:pointer;color:var(--tx)}
+.us{display:flex;gap:9px;align-items:center;font-size:.82rem}.us span{width:32px;height:32px;border-radius:50%;background:var(--ac);color:#fff;display:grid;place-items:center;font-weight:700;font-size:.75rem}
+.us small{display:block;color:var(--mu)}
+main{padding:22px 26px;max-width:1500px}
+.card{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:20px}
+.row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}.g{display:grid;gap:16px;margin-top:16px}
+.k{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}.t2{grid-template-columns:minmax(0,2fr) minmax(0,1fr)}@media(max-width:1000px){.t2{grid-template-columns:1fr}}
+.tag{background:var(--inf);color:var(--ac);font-size:.75rem;font-weight:600;padding:3px 9px;border-radius:7px}
+.sub{color:var(--mu);font-size:.88rem;margin-top:3px}
+.chips{display:flex;gap:4px;margin-left:auto;background:var(--bg);padding:5px;border-radius:10px;border:1px solid var(--bd)}
+.chips button{border:0;background:none;color:var(--mu);padding:8px 13px;border-radius:8px;cursor:pointer;font-size:.85rem}.chips button.on{background:var(--cd);color:var(--tx);font-weight:700;box-shadow:0 1px 3px #0002}
+.bt{background:var(--ac);color:#fff;border:0;border-radius:10px;padding:11px 16px;cursor:pointer;font-weight:600}
+.mo{background:var(--inf);border:1px solid var(--bd);border-radius:14px;padding:18px;margin-top:16px}
+.mo h2{font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}
+.ins{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.in{border-radius:10px;padding:14px;font-size:.85rem;line-height:1.55;border:1px solid}.in b{font-size:.95rem;display:block;margin-bottom:5px}.in em{display:block;margin-top:9px;padding-top:8px;border-top:1px solid #0001;font-style:normal;font-size:.8rem}
+.in.w{background:var(--wab);border-color:var(--wae);color:var(--wa)}.in.e{background:var(--erb);border-color:var(--ere);color:var(--er)}.in.o{background:var(--inf);border-color:var(--bd);color:var(--ok)}
+.kl{font-size:.75rem;letter-spacing:.06em;color:var(--mu);font-weight:700;text-transform:uppercase}.kv{font-size:2rem;font-weight:800;margin:14px 0 4px}.kv small{font-size:.9rem;color:var(--mu);margin-left:5px;font-weight:600}
+.pill{font-size:.72rem;font-weight:700;padding:2px 9px;border-radius:12px;background:#d1fae5;color:#065f46;white-space:nowrap}.pill.y{background:var(--wae);color:var(--wa)}.pill.r{background:var(--ere);color:var(--er)}
+table{width:100%;border-collapse:collapse;font-size:.87rem}th,td{padding:10px 12px;border-bottom:1px solid var(--bd);text-align:left;white-space:nowrap}th{color:var(--mu);font-size:.72rem;text-transform:uppercase;letter-spacing:.04em}.sc{overflow-x:auto}
+.pg{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}.pc{border:1px solid var(--bd);border-radius:12px;padding:16px}.pc h3{margin:10px 0 2px;font-size:1rem}
+.bar{height:8px;background:var(--bg);border-radius:5px;overflow:hidden;margin-top:6px}.bar i{display:block;height:100%;background:var(--ac)}
+select,input,.ib{font-size:.88rem}select,.f input{padding:9px;border:1px solid var(--bd);border-radius:9px;background:var(--bg);color:var(--tx)}
+pre{background:#050b17;color:#7dd3fc;padding:14px;border-radius:10px;font-size:.82rem;overflow-x:auto;margin-top:12px;line-height:1.6}
+.g.k .card{border-left:4px solid var(--ac)}.mo{border-left:4px solid var(--ac)}.nt{color:var(--mu);font-size:.78rem;margin-top:14px;line-height:1.5}svg{width:100%;height:auto;display:block}
+</style></head><body>
+<aside id="nv"></aside>
+<div class="mn"><header><div><div class="bc">SME Port d’Agadir / <b id="bc"></b></div><h1 id="h1"></h1></div>
+<div class="sp"><input id="q" placeholder="Rechercher… (Ctrl+K)"><button class="ib" id="th">🌙</button><button class="ib" id="bl">🔔</button><span class="pill y">DÉMO · DONNÉES SIMULÉES</span></div></header>
+<main id="m"></main></div>
+<script>
+const $=s=>document.querySelector(s),f=(n,d=0)=>n.toLocaleString('fr-FR',{minimumFractionDigits:d,maximumFractionDigits:d});
+let seed=11;const rnd=()=>(seed=seed*16807%2147483647)/2147483647;
+const PO=[['P1','Quai Commerce',2.1],['P2','Terminal Conteneurs',3.4],['P3','Terminal Roulier & Silos Vrac',1.8],['P4','Bâtiment Administratif',.7],['P5','Entrepôts & Froid',1.5],['P6','Quai Pêche',1.2]].map(([id,nm,k],i)=>({id,nm,k,ex:i==0,n:4+i%3}));
+const cur=h=>.62+.38*Math.sin((h-9)/24*6.2832),C=[];
+PO.forEach((p,i)=>{for(let j=1;j<=p.n;j++)C.push({id:p.id+'-CPT'+j,po:p.id,base:p.k*560/p.n*(.75+rnd()*.5),cos:p.id=='P3'?.86+rnd()*.04:.93+rnd()*.05,ip:`10.20.${i+1}.${10+j}`,uid:j,cls:j<3?'0,2S':'0,5S',st:p.id=='P6'?'off':'ok',lag:p.id=='P6'?6+j:0})});
+C.find(c=>c.id=='P2-CPT3').st='st';C.find(c=>c.id=='P2-CPT3').lag=18;
+const hr=()=>{const d=new Date();return d.getHours()+d.getMinutes()/60};
+const live=c=>c.st=='off'?0:c.base*cur(hr())*(1+(rnd()-.5)*.05);
+const kwh=c=>{let s=0;for(let x=0;x<=new Date().getHours();x++)s+=c.base*cur(x);return c.st=='off'?s*.7:s};
+const sum=(a,fn)=>a.reduce((s,x)=>s+fn(x),0),now=new Date(),doy=Math.ceil((now-new Date(now.getFullYear(),0,0))/864e5);
+const PER={d:['Aujourd’hui',1],w:['7 jours',7],m:['30 jours',30],mo:['Ce mois',now.getDate()],y:['Année 2026',doy]};let per='d',view='dash',flt='';
+const mcos=po=>{const a=C.filter(c=>c.po==po&&c.st!='off');return a.length?sum(a,c=>c.cos)/a.length:0};
+function alerts(){const A=[],t=m=>new Date(Date.now()-m*6e4).toLocaleString('fr-FR');
+PO.forEach(p=>{const cs=C.filter(c=>c.po==p.id),off=cs.filter(c=>c.st=='off'),st=cs.filter(c=>c.st=='st'),cm=mcos(p.id);
+if(off.length)A.push({s:'e',t:t(off[0].lag),pt:'POSTE-'+p.id,ty:'Perte de communication Modbus TCP',pr:'Haute',tt:`${off.length} poste(s) en perte de communication Modbus TCP`,d:`Aucune réponse socket depuis plus de ${off[0].lag} minutes sur POSTE-${p.id}. Les index d’énergie ne sont plus télé-relevés en direct.`,r:'Vérifier la liaison optique inter-postes et l’état du switch industriel du quai.'});
+if(st.length)A.push({s:'w',t:t(st[0].lag),pt:st[0].id,ty:'Donnée ancienne (non temps réel)',pr:'Moyenne',tt:'Donnée non fraîche ('+st[0].id+')',d:`Dernière lecture il y a ${st[0].lag} min, au-delà du délai de fraîcheur paramétré (démo).`,r:'Contrôler la période d’interrogation du compteur.'});
+if(cm&&cm<.9)A.push({s:'w',t:t(30),pt:'POSTE-'+p.id,ty:'Facteur de puissance bas ('+f(cm,2)+')',pr:'Moyenne',tt:`Facteur de puissance sous le seuil contractuel (POSTE-${p.id})`,d:`Le facteur de puissance moyen du Poste ${p.id} — ${p.nm} (Démo) est mesuré à ${f(cm,3)}, inférieur au seuil de 0,90 (démo). Risque de pénalité d’énergie réactive.`,r:'Enclencher ou vérifier le gradin automatique de la batterie de condensateurs.'})});
+return A}
+let AL=alerts();AL.forEach(a=>a.st='Nouvelle');
+const NAV=[['Supervision énergétique'],['dash','▦','Tableau de bord'],['live','∿','Temps réel & Fraîcheur'],['po','ϟ','Postes électriques (P1-P6)'],['hist','⌇','Historique & Courbes'],['Management ISO 50001'],['ipe','◔','Indicateurs (IPE)'],['ser','↘','Situation Référence (SER)'],['alr','🔔','Centre d’alertes'],['rap','▤','Rapports & Bilans'],['qual','✓','Qualité des données'],['Acquisition & technique'],['eq','⚙','Équipements & Compteurs'],['sim','⇄','Simulateur Modbus TCP']];
+const TT={};NAV.forEach(n=>n[2]&&(TT[n[0]]=n[2]));
+function nav(){$('#nv').innerHTML='<div class="br"><div class="lg">⚓</div><div><b>MARSA MAROC</b><small>SME PORT D’AGADIR</small></div></div>'+NAV.map(n=>n.length==1?`<div class="gr">${n[0]}</div>`:`<a class="${view==n[0]?'on':''}" onclick="go('${n[0]}')"><i>${n[1]}</i><span>${n[2]}</span>${n[0]=='alr'?`<b class="bd">${AL.filter(a=>a.st!='Clôturée').length}</b>`:''}</a>`).join('')}
+function go(v){view=v;draw()}
+function line(v,col='#0b6bff',H=260){const W=560,m=40,mx=Math.max(...v)*1.1||1,X=i=>m+(W-m-10)*i/(v.length-1),Y=y=>H-28-(H-50)*y/mx,p=v.map((y,i)=>X(i)+','+Y(y)).join(' ');let s=`<svg viewBox="0 0 ${W} ${H}">`;
+for(let i=0;i<=4;i++){const y=H-28-(H-50)*i/4;s+=`<line x1="${m}" x2="${W-10}" y1="${y}" y2="${y}" stroke="var(--bd)"/><text x="${m-6}" y="${y+4}" text-anchor="end" font-size="10" fill="var(--mu)">${f(mx*i/4)}</text>`}
+return s+`<polygon points="${X(0)},${H-28} ${p} ${X(v.length-1)},${H-28}" fill="${col}" opacity=".12"/><polyline points="${p}" fill="none" stroke="${col}" stroke-width="2.5"/></svg>`}
+const curve24=()=>Array.from({length:24},(_,x)=>sum(C,c=>c.st=='off'?0:c.base*cur(x)));
+const tbl=(h,r)=>`<div class="sc"><table><thead><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${r.map(x=>`<tr>${x.map(y=>`<td>${y}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+const st=c=>c.st=='ok'?'<span class="pill">EN LIGNE</span>':c.st=='st'?'<span class="pill y">DONNÉE ANCIENNE</span>':'<span class="pill r">HORS LIGNE</span>';
+const csv=()=>{const r=[['compteur','poste','P_kW','cos_phi','etat'],...C.map(c=>[c.id,c.po,live(c).toFixed(1),c.cos.toFixed(2),c.st])].map(x=>x.join(';')).join('\n'),a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\ufeff'+r],{type:'text/csv'}));a.download='sme_agadir_demo.csv';a.click()};
+const V={
+dash(){const on=C.filter(c=>c.st!='off'),M=PER[per][1],tot=sum(C,live),en=sum(C,kwh)*M,cm=sum(on,c=>c.cos)/on.length,op=AL.filter(a=>a.st!='Clôturée'),ins=op.filter(a=>a.s!='x');
+return `<div class="card row"><div><div class="row"><h2 style="font-size:1.3rem">Supervision Énergétique Portuaire</h2><span class="tag">6 Postes MT/BT</span></div><div class="sub">Données consolidées d’exploitation — Direction d’Exploitation au Port d’Agadir</div></div>
+<div class="chips">${Object.entries(PER).map(([k,v])=>`<button class="${k==per?'on':''}" onclick="per='${k}';draw()">${v[0]}</button>`).join('')}</div><button class="bt" onclick="csv()">⤓ Exporter CSV</button></div>
+<div class="mo"><h2>Moteur d’analyse automatique & insights opérationnels (règles locales)</h2><div class="ins">${ins.length?ins.map(a=>`<div class="in ${a.s}"><b>⚠ ${a.tt}</b>${a.d}<em><b style="display:inline;font-size:inherit">Recommandation :</b> ${a.r}</em></div>`).join(''):'<div class="in o"><b>Aucune anomalie</b>Tous les points sont conformes.</div>'}</div></div>
+<div class="g k">${[['Puissance instantanée',f(tot),'kW'],['Consommation active',f(en),'kWh'],['Facteur de puissance',f(cm,3),'moyen'],['Disponibilité des mesures',f(on.length/C.length*100,1),'%']].map(k=>`<div class="card"><div class="kl">${k[0]}</div><div class="kv">${k[1]}<small>${k[2]}</small></div></div>`).join('')}</div>
+<div class="g t2"><div class="card"><h3>Courbe de charge 24 h (kW)</h3>${line(curve24())}</div><div class="card"><h3>Répartition par poste</h3>${PO.map(p=>{const s=sum(C.filter(c=>c.po==p.id),live);return `<div style="margin-top:14px;font-size:.85rem"><div class="row" style="justify-content:space-between"><span>${p.id} — ${p.nm}</span><b>${f(s)} kW</b></div><div class="bar"><i style="width:${s/tot*100}%"></i></div></div>`}).join('')}</div></div>
+<p class="nt">Prototype de démonstration : valeurs simulées, aucune lecture réelle de compteur. Noms de postes, seuils et formules à valider avec la DEPA.</p>`},
+live(){return `<div class="card"><h3 style="margin-bottom:12px">Mesures instantanées et fraîcheur</h3>${tbl(['Compteur','Poste','P (kW)','cos φ','Dernière lecture','État'],C.filter(c=>c.id.includes(flt)).map(c=>[c.id,c.po,c.st=='off'?'–':f(live(c),1),c.st=='off'?'–':f(c.cos,2),new Date(Date.now()-c.lag*6e4).toLocaleTimeString('fr-FR')+(c.lag?` (il y a ${c.lag} min)`:''),st(c)]))}</div>`},
+po(){return `<div class="pg">${PO.map(p=>{const a=C.filter(c=>c.po==p.id),n=a.filter(c=>c.st=='ok').length,cm=mcos(p.id);const [cl,tx]=n<a.length?['r','DÉGRADÉ']:cm<.9?['y','À SURVEILLER']:['','NORMAL'];return `<div class="pc"><div class="row" style="justify-content:space-between"><b style="color:var(--ac)">${p.id}</b><span class="pill ${cl}">${tx}</span></div><h3>${p.nm}</h3><div class="sub">${p.ex?'Compteurs existants intégrés (Modbus)':'Nouveaux compteurs 0,5S / 0,2S'}</div><div class="row" style="justify-content:space-between;margin-top:14px"><span class="sub">Puissance active</span><b>${f(sum(a,live))} kW</b></div><div class="row" style="justify-content:space-between"><span class="sub">cos φ moyen</span><b>${f(cm,2)}</b></div><div class="sub" style="margin-top:8px">${n}/${a.length} points en ligne</div></div>`}).join('')}</div>`},
+hist(){const p=flt||'P1',a=C.filter(c=>c.po==p),v=Array.from({length:24},(_,x)=>sum(a,c=>c.st=='off'?0:c.base*cur(x)));return `<div class="card"><div class="row f"><select onchange="flt=this.value;draw()">${PO.map(o=>`<option ${o.id==p?'selected':''}>${o.id}</option>`).join('')}</select><span class="sub">Puissance active du poste ${p} sur 24 h (simulée)</span></div>${line(v,'#059669')}</div>`},
+ipe(){return `<div class="card"><h3 style="margin-bottom:12px">IPE — exemple de démonstration</h3>${tbl(['Poste','Énergie (kWh)','Puissance moy. (kW)','cos φ moyen'],PO.map(p=>{const a=C.filter(c=>c.po==p.id),e=sum(a,kwh)*PER[per][1];return [p.id+' — '+p.nm,f(e),f(e/(24*PER[per][1])),f(mcos(p.id),2)]}))}<p class="nt">Les IPE officiels, formules et variables de normalisation (ISO 50001:2018) sont à définir et valider avec la DEPA.</p></div>`},
+ser(){return `<div class="card"><h3 style="margin-bottom:12px">Situation Énergétique de Référence — exemple</h3>${tbl(['Poste','Référence (kWh)','Observé (kWh)','Écart'],PO.map((p,i)=>{const o=sum(C.filter(c=>c.po==p.id),kwh),r=o*(1.02+(i%3)*.02),e=(o/r-1)*100;return [p.id,f(r),f(o),`<b style="color:${e>0?'var(--er)':'var(--ok)'}">${f(e,1)} %</b>`]}))}<p class="nt">Période de référence et méthode de normalisation à valider avec la DEPA.</p></div>`},
+alr(){return `<div class="card"><h3 style="margin-bottom:12px">Centre d’alertes</h3>${tbl(['Détectée','Point','Type','Priorité','Statut','Action'],AL.map((a,i)=>[a.t,a.pt,a.ty,`<span class="pill ${a.pr=='Haute'?'r':'y'}">${a.pr.toUpperCase()}</span>`,a.st,a.st=='Nouvelle'?`<button class="ib" onclick="AL[${i}].st='Prise en charge';draw()">Prendre en charge</button>`:a.st=='Prise en charge'?`<button class="ib" onclick="AL[${i}].st='Clôturée';AL[${i}].s='x';draw()">Clôturer</button>`:'—']))}</div>`},
+rap(){return `<div class="card"><h3>Rapports & Bilans</h3><p class="sub" style="margin:6px 0 14px">Modèles et périodicités à valider avec la DEPA. Export de démonstration :</p><button class="bt" onclick="csv()">⤓ Mesures instantanées (CSV)</button></div>`},
+qual(){return `<div class="card"><h3 style="margin-bottom:12px">Qualité des données</h3>${tbl(['Poste','Points valides','Disponibilité','Manquants'],PO.map(p=>{const a=C.filter(c=>c.po==p.id),n=a.filter(c=>c.st=='ok').length;return [p.id,n+'/'+a.length,`<div class="bar" style="width:140px"><i style="width:${n/a.length*100}%"></i></div>`,a.length-n]}))}</div>`},
+eq(){return `<div class="card"><h3 style="margin-bottom:12px">Équipements & Compteurs</h3>${tbl(['ID','Poste','Adresse IP','Unit ID','Classe','Protocole','État'],C.map(c=>[c.id,c.po,c.ip,c.uid,c.cls,'Modbus TCP/IP',st(c)]))}<p class="nt">Marques, modèles, registres et adressage à confirmer à l’inventaire terrain.</p></div>`},
+sim(){return `<div class="card"><h3>Simulateur Modbus TCP</h3><div class="row f" style="margin-top:12px"><select id="sc">${C.map(c=>`<option>${c.id}</option>`).join('')}</select><select id="sf"><option>03</option><option>04</option></select><input id="sa" value="0" size="6" title="Adresse"><input id="sn" value="2" size="4" title="Nombre"><button class="bt" onclick="sim()">Lire</button></div><pre id="so">Sélectionnez un compteur et lancez une lecture (réponse simulée, registres de démonstration).</pre></div>`}};
+function sim(){const c=C.find(x=>x.id==$('#sc').value),fc=+$('#sf').value,a=+$('#sa').value,n=+$('#sn').value,h=(x,l)=>x.toString(16).padStart(l,'0').toUpperCase(),sp=s=>s.match(/../g).join(' ');
+if(c.st=='off'){$('#so').textContent=`> ${c.ip}:502 ...\nTimeout : aucune réponse du compteur (perte de communication).`;return}
+const dv=new DataView(new ArrayBuffer(n*2));if(n>=2)dv.setFloat32(0,live(c));let d='';for(let i=0;i<n*2;i++)d+=h(dv.getUint8(i),2);
+$('#so').textContent=`> ${c.ip}:502 (Unit ${c.uid})\nREQ  ${sp(h(1,4)+'0000'+h(6,4)+h(c.uid,2)+h(fc,2)+h(a,4)+h(n,4))}\nRESP ${sp(h(1,4)+'0000'+h(3+n*2,4)+h(c.uid,2)+h(fc,2)+h(n*2,2)+d)}\nValeur (float32, registres ${a}-${a+1}) : ${f(dv.getFloat32(0),2)} kW`}
+function draw(){nav();$('#h1').textContent=$('#bc').textContent=TT[view];$('#m').innerHTML=V[view]()}
+$('#th').onclick=()=>{const d=document.documentElement;d.dataset.t=d.dataset.t=='d'?'':'d'};$('#bl').onclick=()=>go('alr');
+$('#q').onkeydown=e=>{if(e.key=='Enter'){const v=e.target.value.toLowerCase(),n=NAV.find(n=>n[2]&&n[2].toLowerCase().includes(v));if(n)go(n[0]);else{flt=e.target.value.toUpperCase();go('live')}}};
+addEventListener('keydown',e=>{if(e.ctrlKey&&e.key=='k'){e.preventDefault();$('#q').focus()}});
+draw();setInterval(()=>{if(!['sim','hist'].includes(view)&&document.activeElement.id!='q')draw()},5000);
+</script></body></html>
